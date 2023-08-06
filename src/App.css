@@ -1,0 +1,169 @@
+.header {
+  font-size: 20px;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 15px;
+}
+
+.searchBar {
+  height: 44px;
+  width: 15%;
+  border: none;
+  padding-left: 10px;
+  margin: 15px 18px;
+}
+
+.contentBox {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.mainTile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 280px;
+  width: 280px;
+  background-color: rgb(223, 41, 0);
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.totalCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: rgb(225, 225, 30);
+  font-size: 25px;
+  text-align: center;
+  top: -20px;
+  right: -25px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.fullName {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+}
+
+.circle {
+  height: 70%;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.homeIcon {
+  font-size: 90px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closeDialog:hover,
+.closeDialog:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.DialogContent {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  padding: 19px 10px;
+  margin: 30px;
+}
+
+.noResultFound {
+  display: flex;
+  justify-content: center;
+}
+
+.closeDialog {
+  font-size: 50px;
+  margin-top: -40px;
+  color: #aaaaaa;
+  margin-right: -16px;
+  float: right;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .contentBox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .contentBox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    width: 100%;
+  }
+  .contentBox {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+}
